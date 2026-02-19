@@ -1,12 +1,14 @@
 import matplotlib.pyplot as plt
 
-def generate_sales_chart(data):
+
+# this will generate line chart based on the data provided by the user
+def generate_chart(data):
     """
     Generate and save a line chart of monthly revenue.
 
     This function takes sales data as input, extracts months and revenue values,
     and generates a line chart using Matplotlib. The chart is saved locally
-    as 'revenue_chart.png'.
+    as 'chart.png'.
 
     Parameters
     ----------
@@ -27,7 +29,7 @@ def generate_sales_chart(data):
 
     Output
     ------
-    revenue_chart.png
+    chart.png
         A PNG image file containing the monthly revenue line chart.
 
     Notes
@@ -39,8 +41,8 @@ def generate_sales_chart(data):
     Example
     -------
     >>> sales_data = [("Jan", 1000), ("Feb", 1500)]
-    >>> generate_sales_chart(sales_data)
-    'Chart saved as revenue_chart.png'
+    >>> generate_chart(data)
+    'Chart saved as chart.png'
     """
     x = [row[0] for row in data]
     y = [row[1] for row in data]
