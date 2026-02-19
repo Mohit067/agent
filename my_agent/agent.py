@@ -4,8 +4,6 @@ from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.agents.remote_a2a_agent import AGENT_CARD_WELL_KNOWN_PATH
 from google.adk.agents.remote_a2a_agent import RemoteA2aAgent
-
-
 from google.adk.tools.mcp_tool import McpToolset
 from google.adk.tools.mcp_tool.mcp_session_manager import StdioConnectionParams, StreamableHTTPConnectionParams
 from google.adk.agents import LlmAgent
@@ -24,7 +22,7 @@ remote_agent = RemoteA2aAgent(
     agent_card=f"{DATABASE_AGENT_URL}{AGENT_CARD_WELL_KNOWN_PATH}",
 )
 
-# add_tow_numeber Agent that communicates to the HTTP MCP server
+# add_tow_numeber Agent that communicates to the stdio MCP server
 add_two_numbers = LlmAgent(
     model=LiteLlm(model="groq/openai/gpt-oss-20b"),
     name='add_agent',

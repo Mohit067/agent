@@ -22,8 +22,12 @@
 
 
 import requests
+import os
+from dotenv import load_dotenv
 
-BASE_URL = "http://190.1.3.34:3000"
+load_dotenv()
+
+BASE_URL = os.getenv('DATABASE_BASE_URL')
 
 
 def get_all_users():
