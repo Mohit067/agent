@@ -18,7 +18,7 @@ database_agent = Agent(
 
 # chart agent who will generate chart based on the data provided by the user
 chart_agent = Agent(
-    name="Sales_Chart_Agent",
+    name="Chart_Agent",
     model=LiteLlm(model="groq/openai/gpt-oss-20b"),
     description="Sales Chart Agent is an AI agent capable of generating "
         "monthly revenue charts using provided sales data.",

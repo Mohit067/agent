@@ -269,7 +269,7 @@ def main():
 
 
 db_tools = [get_all_users, get_user_by_email, create_user,
-            delete_user_by_email, update_name_by_email, update_email, delete_all_users]
+            delete_user_by_email, update_name_by_email, update_email, delete_all_users, sql_statement]
 
 if __name__ == "__main__":
     main()
